@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<project name="CtrlBlog" default="db-reload">
+
+    <!-- Sets the DSTAMP, TSTAMP and TODAY properties -->
+    <tstamp/>
+
+    <!-- Load our configuration -->
+    <property file="build.properties" />
+
+    <target name="db-drop" description="drops the database completely">
+        <exec
+            command="${progs.mysql} -h${db.host} -u${db.user} -p${db.pass} -e 'DROP DATABASE IF EXISTS `${db.name}`'"
+            dir="${build.dir}"
+            checkreturn="true" />
+    </target>
+
+    <target name="db-create" description="creates an empty database with the configured name">
+        <exec
+                command="${progs.mysql} -h${db.host} -u${db.user} -p${db.pass} -e 'CREATE DATABASE `${db.name}`'"
+                dir="${build.dir}"
+                checkreturn="true" />
+    </target>
+
+    <target name="orm-validate" description="validates the schema with the doctrine mappings">
+        <exec
+                command="php doctrine.php orm:validate-schema --verbose'"
+                dir="${build.dir}"
+                checkreturn="false"
+                passthru="true" />
+    </target>
+
+    <target name="db-migrate" description="Database Migrations">
+
+        <!-- load the dbdeploy task -->
+        <taskdef name="dbdeploy" classname="phing.tasks.ext.dbdeploy.DbDeployTask"/>
+
+        <!-- these two filenames will contain the generated SQL to do the deploy and roll it back-->
+        <property name="build.dbdeploy.deployfile" value="${build.dir}/db/scripts/deploy-${DSTAMP}${TSTAMP}.sql" />
+        <property name="build.dbdeploy.undofile" value="${build.dir}/db/scripts/undo-${DSTAMP}${TSTAMP}.sql" />
+
+        <!-- create initial setup -->
+        <exec
+            command="${progs.mysql} -h${db.host} -u${db.user} -p${db.pass} ${db.name} &lt; ${build.dir}/db/initial.sql"
+            dir="${build.dir}"
+            checkreturn="true" />
+
+        <!-- generate the deployment scripts -->
+        <dbdeploy
+                url="mysql:host=${db.host};dbname=${db.name}"
+                userid="${db.user}"
+                password="${db.pass}"
+                dir="${build.dir}/db/delta"
+                outputfile="${build.dir}/${build.dbdeploy.deployfile}"
+                undooutputfile="${build.dir}/${build.dbdeploy.undofile}" />
+
+        <!-- execute the SQL - Use mysql command line to avoid trouble with large files or many statements and PDO -->
+        <exec
+            command="${progs.mysql} -h${db.host} -u${db.user} -p${db.pass} ${db.name} &lt; ${build.dbdeploy.deployfile}"
+            dir="${build.dir}"
+            checkreturn="true" />
+    </target>
+
+    <target name="db-load-sampledata" description="loads sample data">
+        <exec
+            command="${progs.mysql} -h${db.host} -u${db.user} -p${db.pass} ${db.name} &lt; ${build.dir}/db/data/sample.sql"
+            dir="${build.dir}"
+            checkreturn="true" />
+    </target>
+
+    <target name="db-reset" description="drops, creates and migrates"
+            depends="db-drop, db-create, db-migrate" />
+
+    <target name="db-reload" description="drops, creates, migrates and loads sample data"
+            depends="db-drop, db-create, db-migrate, db-load-sampledata" />
+</project>

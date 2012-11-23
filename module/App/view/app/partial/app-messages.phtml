@@ -1,0 +1,11 @@
+<?php if (is_array($this->appMessages) && count($this->appMessages)): ?>
+<?php foreach ($this->appMessages as $cat => $msgs): ?>
+    <?php foreach ($msgs as $msg): ?>
+        <div class="alert alert-block alert-<?php echo $cat; ?>">
+            <a class="close" data-dismiss="alert" href="#">×</a>
+            <h4 class="alert-heading">Woops</h4>
+            <?php echo $msg; ?>
+        </div>
+    <?php endforeach; ?>
+<?php endforeach; ?>
+<?php endif; ?>

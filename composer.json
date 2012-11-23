@@ -1,0 +1,39 @@
+{
+    "name": "ctrl-f5/CtrlSkeleton",
+    "description": "CtrlSkeleton",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "ctrl-f5",
+        "zf2"
+    ],
+    "homepage": "http://ctrl-f5.net/",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "http://github.com/ctrl-f5/ctrllib"
+        },
+        {
+            "type": "git",
+            "url": "http://github.com/ctrl-f5/ctrlAuth"
+        },
+        {
+            "type": "git",
+            "url": "http://github.com/ctrl-f5/ctrljs"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "dev-master",
+        "doctrine/doctrine-orm-module": "dev-master",
+        "doctrine/doctrine-module": "dev-master",
+        "ctrl-f5/ctrllib": "dev-master",
+        "ctrl-f5/ctrlAuth": "dev-master",
+        "ctrl-f5/ctrljs": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "public/js/vendor/{$vendor}/{$name}/": ["ctrl-f5/ctrljs"]
+        }
+    }
+}

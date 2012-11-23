@@ -1,0 +1,67 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('ZF2 '. $this->translate('Skeleton Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+                        ->appendStylesheet($this->basePath() . '/css/bootstrap.css')
+                        ->appendStylesheet($this->basePath() . '/css/bootstrap-responsive.min.css')
+                        ->appendStylesheet($this->basePath() . '/modules/dev-ctrl/css/style.css') ?>
+
+        <!-- vendor scripts -->
+        <?php
+            echo $this->ctrlJsLoader()->loadScripts(true);
+        ?>
+        <!-- Custom Scripts -->
+        <?php echo $this->headScript()->appendFile($this->basePath() . '/js/init.js'); ?>
+    </head>
+    <body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+            <a class="brand" href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Ctrl Framework') ?></a>
+            <?php //var_dump($this->ctrlNavigation($this->navigation['main'])->menu()); ?>
+            <?php echo $this->ctrlNavigation()->menu($this->navigation['main'])->renderMenu(null, array('maxDepth' => 0)); ?>
+            <ul class="nav pull-right">
+                <li><a href="#"><span class="icon icon-user icon-white"></span>&nbsp;&nbsp;&nbsp;<strong><?php //echo $this->appCurrentUser->getUsername(); ?></strong></a></li>
+                <li class="divider-vertical"></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon-wrench icon-white"></span> <b class="carret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><strong>settings</strong></a></li>
+                        <li><a href="#"><strong>profile</strong></a></li>
+                        <li><a href="#"><strong>logout</strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="navbar-inner">
+            <div class="container">
+                <?php echo $this->ctrlNavigation()->menu($this->navigation['main'])->renderMenu(null, array('minDepth' => 1, 'maxDepth' => 1)); ?>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+        <?php echo $this->render('ctrl/partial/app-messages.phtml'); ?>
+    <?php echo $this->content; ?>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 0.0.0 development</p>
+    </footer>
+
+    </div> <!-- /container -->
+
+    </body>
+</html>

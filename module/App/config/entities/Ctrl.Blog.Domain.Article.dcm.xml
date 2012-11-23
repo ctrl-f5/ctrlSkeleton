@@ -1,0 +1,17 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                    http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="Ctrl\Blog\Domain\Article" table="article">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+            <sequence-generator sequence-name="autoinc" allocation-size="100" initial-value="1" />
+        </id>
+
+        <field name="title" column="title" type="string" length="255" nullable="false" unique="false" />
+        <field name="content" column="content" type="text" nullable="false" unique="false" />
+        <field name="dateCreated" column="dateCreated" type="datetime" nullable="false" unique="false" />
+
+    </entity>
+</doctrine-mapping>
