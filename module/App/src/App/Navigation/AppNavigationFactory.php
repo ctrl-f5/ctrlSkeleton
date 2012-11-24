@@ -27,16 +27,22 @@ class AppNavigationFactory extends AbstractNavigationFactory
         $factory = new \Zend\Navigation\Service\ConstructedNavigationFactory($pages);
         $navigation = $factory->createService($serviceLocator);
 
+        // get nessecary resources for adding pages
+        $application = $serviceLocator->get('Application');
+        $routeMatch  = $application->getMvcEvent()->getRouteMatch();
+        $router      = $application->getMvcEvent()->getRouter();
+
         // add authentication module navigation
         $authNav = $serviceLocator->get('CtrlAuthNavigation');
-        $pageConfig = array(
+        $authItem = array(
             'label' => 'Auth Module',
             'route' => 'ctrl_auth',
             'pages' => $authNav->getPages(),
             'type' => 'Ctrl\Navigation\Page\Mvc',
-            'router' => $serviceLocator->get('router'),
+            'router' => $router,
+            'routeMatch' => $routeMatch,
         );
-        $navigation->addPage($pageConfig);
+        $navigation->addPage($authItem);
 
         return $navigation;
     }

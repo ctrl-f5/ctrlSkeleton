@@ -71,14 +71,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "f071ca9689d1dfccadbe0d7de8706bb0eefb6144"
+                "reference": "43d21deedc3c1adbbb8d2fc3531ced0999ceeea6"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master#c34e65aca73902b311a374b2f4a0a1d4ee9bf792",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "1353712063",
+            "time": "1353722815",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -129,7 +129,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "eb6192c2f91cb2e3bc8cab17e1cef1f60c9c0667"
+                "reference": "fc3cb3236c9f53d2a164a5e25a926d697757af43"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -147,7 +147,7 @@
                 "zendframework/zend-modulemanager": "2.0.*",
                 "zendframework/zend-session": "2.0.*"
             },
-            "time": "1353722791",
+            "time": "1353724166",
             "type": "library",
             "installation-source": "source",
             "autoload": {
