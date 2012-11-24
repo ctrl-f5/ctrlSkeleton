@@ -129,7 +129,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "66cfc6ba79e9521f71bc99147c58410def5aee65"
+                "reference": "eb6192c2f91cb2e3bc8cab17e1cef1f60c9c0667"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -147,7 +147,7 @@
                 "zendframework/zend-modulemanager": "2.0.*",
                 "zendframework/zend-session": "2.0.*"
             },
-            "time": "1353712016",
+            "time": "1353722791",
             "type": "library",
             "installation-source": "source",
             "autoload": {
