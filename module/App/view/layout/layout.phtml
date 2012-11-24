@@ -25,26 +25,13 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-            <a class="brand" href="<?php //echo $this->url('default') ?>"><?php echo $this->translate('Ctrl Framework') ?></a>
-            <?php //var_dump($this->ctrlNavigation($this->navigation['main'])->menu()); ?>
-            <?php echo $this->ctrlNavigation()->menu($this->navigation['main'])->renderMenu(null, array('maxDepth' => 0)); ?>
-            <ul class="nav pull-right">
-                <li><a href="#"><span class="icon icon-user icon-white"></span>&nbsp;&nbsp;&nbsp;<strong><?php //echo $this->appCurrentUser->getUsername(); ?></strong></a></li>
-                <li class="divider-vertical"></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon-wrench icon-white"></span> <b class="carret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><strong>settings</strong></a></li>
-                        <li><a href="#"><strong>profile</strong></a></li>
-                        <li><a href="#"><strong>logout</strong></a></li>
-                    </ul>
-                </li>
-            </ul>
+            <a class="brand" href="<?php echo $this->url('default') ?>"><?php echo $this->translate('Ctrl Framework') ?></a>
+            <?php echo $this->navigation()->menu($this->navigation['main'])->renderMenu(null, array('maxDepth' => 0)); ?>
             </div>
         </div>
         <div class="navbar-inner">
             <div class="container">
-                <?php echo $this->ctrlNavigation()->menu($this->navigation['main'])->renderMenu(null, array('minDepth' => 1, 'maxDepth' => 1)); ?>
+                <?php echo $this->navigation()->menu($this->navigation['main'])->renderMenu(null, array('minDepth' => 1, 'maxDepth' => 1)); ?>
             </div>
         </div>
     </div>

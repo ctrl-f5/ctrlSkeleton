@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctrl\Blog;
+namespace App;
 
 class Exception extends \Ctrl\Exception
 {
