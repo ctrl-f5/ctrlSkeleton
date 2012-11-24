@@ -42,6 +42,18 @@ class Module
                     }
                 }
                 $view->appMessages = $messages;
+
+                // build navigation
+                /** @var $navigation \Zend\Navigation\Navigation */
+                $navigation = $serviceManager->get('navigation');
+                /** @var $navHelper \Ctrl\View\Helper\Navigation\Navigation */
+                $navHelper = $serviceManager->get('ViewHelperManager')->get('Navigation');
+                $navHelper->setAcl($serviceManager->get('CtrlAuthAcl'));
+                $navHelper->setRoles($serviceManager->get('DomainServiceLoader')->get('CtrlAuthUser')->getAuthenticatedUser()->getRoles()->toArray());
+                $navHelper->setUseAcl(true);
+                $view->navigation = array(
+                    'main' => $navigation,
+                );
             }
         });
     }
@@ -62,6 +74,18 @@ class Module
                     __NAMESPACE__ => __DIR__.'/src/'.__NAMESPACE__.'/',
                 ),
             ),
+        );
+    }
+
+    public function getServiceConfig()
+    {
+        return array(
+            'factories' => array(
+                'AppNavigation' => 'App\Navigation\AppNavigationFactory',
+            ),
+            'aliases' => array(
+                'Navigation' => 'AppNavigation'
+            )
         );
     }
 

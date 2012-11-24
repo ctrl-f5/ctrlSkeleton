@@ -45,6 +45,19 @@ return array(
                 )
             )
         ),
+    ),
+    'navigation' => array(
+        'app' => array(
+            array(
+                'label' => 'Home',
+                'route' => 'default',
+                'type' => 'Ctrl\Navigation\Page\Mvc',
+                'resource' => 'routes.App\Controller',
+                'params' => array(
+                    'controller' => 'index',
+                    'action' => 'index',
+                ),
+            ),
+        ),
     )
-
 );
