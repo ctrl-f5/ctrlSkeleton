@@ -12,7 +12,7 @@ return array(
             'config/autoload/{,*.}{global,local}.php',
         ),
         'module_paths' => array(
-            'Ctrl\Blog' => './module/CtrlBlog/',
+            'App' => './module/App/',
             './vendor',
             'Ctrl\Module\Auth' => './vendor/ctrl-f5/ctrlAuth/',
             'Ctrl' => './vendor/ctrl-f5/ctrllib/',

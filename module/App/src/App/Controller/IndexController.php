@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctrl\Blog\Controller;
+namespace App\Controller;
 
 use Ctrl\Controller\AbstractController;
 use Zend\View\Model\ViewModel;

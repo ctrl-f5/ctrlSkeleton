@@ -5,6 +5,7 @@ namespace Ctrl\Blog;
 return array(
     'controllers' => array(
         'invokables' => array(
+            'App\Controller\Index' => 'App\Controller\IndexController'
         ),
     ),
     'domain_services' => array(
@@ -40,7 +41,7 @@ return array(
             ),
             'orm_default' => array(
                 'drivers' => array(
-                    'Ctrl\Blog\Domain' => 'app_driver'
+                    'App\Domain' => 'app_driver'
                 )
             )
         ),

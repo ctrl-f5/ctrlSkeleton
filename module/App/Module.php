@@ -48,7 +48,10 @@ class Module
 
     public function getConfig()
     {
-        return include __DIR__ . '/config/module.config.php';
+        return array_merge(
+            $this->getRouterConfig(),
+            include __DIR__ . '/config/module.config.php'
+        );
     }
 
     public function getAutoloaderConfig()
@@ -66,10 +69,7 @@ class Module
     {
         $config = array('router' => array(
             'routes' => array(
-                'default' => \Ctrl\Mvc\Router\Http\DefaultSegment::factory(
-                    'App\Controller',
-                    '/auth'
-                ),
+                'default' => \Ctrl\Mvc\Router\Http\DefaultSegment::factory('App\Controller'),
             ),
         ));
         return $config;
