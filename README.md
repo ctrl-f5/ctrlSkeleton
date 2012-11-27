@@ -73,6 +73,6 @@ Virtual Host
 Afterwards, set up a virtual host to point to the public/ directory of the
 project and you should be ready to go!
 
-Virtual Host
+Create an application
 ============
 The skeleton provides a module called App where you can start programming
