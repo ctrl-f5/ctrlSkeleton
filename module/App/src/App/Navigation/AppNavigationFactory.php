@@ -25,6 +25,7 @@ class AppNavigationFactory extends AbstractNavigationFactory
         // build the menu from config
         $pages = $this->getPages($serviceLocator);
         $factory = new \Zend\Navigation\Service\ConstructedNavigationFactory($pages);
+        /** @var $navigation Navigation */
         $navigation = $factory->createService($serviceLocator);
 
         // get nessecary resources for adding pages
