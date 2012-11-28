@@ -71,14 +71,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "43d21deedc3c1adbbb8d2fc3531ced0999ceeea6"
+                "reference": "cc3f5de4d9200e8ce37bb2a427102e5133dca9fb"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master#c34e65aca73902b311a374b2f4a0a1d4ee9bf792",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "1353722815",
+            "time": "1354067345",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -129,7 +129,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "fc3cb3236c9f53d2a164a5e25a926d697757af43"
+                "reference": "73d2c640ce3bbb0eaefd9a2a325edde077b2d831"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -147,7 +147,7 @@
                 "zendframework/zend-modulemanager": "2.0.*",
                 "zendframework/zend-session": "2.0.*"
             },
-            "time": "1353724166",
+            "time": "1354067083",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -281,19 +281,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal",
-                "reference": "c125e229ef5c90736d6309ba258dfc7c705175ea"
+                "reference": "d1e83ae2375d2771cc4be11139f1ee17bddcea28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/archive/c125e229ef5c90736d6309ba258dfc7c705175ea.zip",
-                "reference": "c125e229ef5c90736d6309ba258dfc7c705175ea",
+                "url": "https://github.com/doctrine/dbal/archive/d1e83ae2375d2771cc4be11139f1ee17bddcea28.zip",
+                "reference": "d1e83ae2375d2771cc4be11139f1ee17bddcea28",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "doctrine/common": ">=2.3-dev,<2.5-dev"
             },
-            "time": "1353598721",
+            "time": "1353866320",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -539,12 +539,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "697e7b1ca560369faa4e0343d86fc76c5091f973"
+                "reference": "95334e976446a855c9e0c0b9cab1a8040e46112f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/archive/697e7b1ca560369faa4e0343d86fc76c5091f973.zip",
-                "reference": "697e7b1ca560369faa4e0343d86fc76c5091f973",
+                "url": "https://github.com/doctrine/doctrine2/archive/95334e976446a855c9e0c0b9cab1a8040e46112f.zip",
+                "reference": "95334e976446a855c9e0c0b9cab1a8040e46112f",
                 "shasum": ""
             },
             "require": {
@@ -556,7 +556,7 @@
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "1353598799",
+            "time": "1354051558",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
@@ -656,12 +656,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/zendframework/zf2.git",
-                "reference": "700e799c2def9b820a6209108e6324f4cdd03627"
+                "reference": "c00c516de69cd968e338fffbab677032c9d06e80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/zendframework/zf2/archive/700e799c2def9b820a6209108e6324f4cdd03627.zip",
-                "reference": "700e799c2def9b820a6209108e6324f4cdd03627",
+                "url": "https://github.com/zendframework/zf2/archive/c00c516de69cd968e338fffbab677032c9d06e80.zip",
+                "reference": "c00c516de69cd968e338fffbab677032c9d06e80",
                 "shasum": ""
             },
             "require": {
@@ -727,7 +727,7 @@
                 "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
                 "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler"
             },
-            "time": "1353530011",
+            "time": "1353942910",
             "bin": [
                 "bin/classmap_generator.php"
             ],
