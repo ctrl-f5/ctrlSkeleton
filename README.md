@@ -7,6 +7,8 @@ several libraries have been set up, configured and integrated to speed up the de
 - Doctrine 2 ORM
 - ctrllib
 - ctrlAuth
+- phing
+- dbdeploy
 
 Installation
 ------------
