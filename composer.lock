@@ -129,7 +129,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "73d2c640ce3bbb0eaefd9a2a325edde077b2d831"
+                "reference": "b17288b10f67dcdc9c28d7c1ba90031793520d3f"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -145,9 +145,11 @@
                 "zendframework/zend-form": "2.0.*",
                 "zendframework/zend-inputfilter": "2.0.*",
                 "zendframework/zend-modulemanager": "2.0.*",
-                "zendframework/zend-session": "2.0.*"
+                "zendframework/zend-session": "2.0.*",
+                "doctrine/doctrine-orm-module": "dev-master",
+                "doctrine/doctrine-module": "dev-master"
             },
-            "time": "1354067083",
+            "time": "1354129568",
             "type": "library",
             "installation-source": "source",
             "autoload": {
