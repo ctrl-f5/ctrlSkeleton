@@ -1,7 +1,12 @@
 CtrlSkeleton
 =======================
 
-Skeleton application using Zend Framework 2 and ctrllib
+Skeleton application provides a Zend Framework 2 environment providing a de fault module, ready for programming.
+several libraries have been set up, configured and integrated to speed up the dev process:
+- based on Zend Framework 2
+- Doctrine 2 ORM
+- ctrllib
+- ctrlAuth
 
 Installation
 ------------
