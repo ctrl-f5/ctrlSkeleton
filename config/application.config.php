@@ -5,7 +5,7 @@ return array(
         'DoctrineORMModule',
         'App',
         'Ctrl\Module\Auth',
-        'Ctrl'
+        'Ctrl',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
