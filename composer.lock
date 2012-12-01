@@ -71,14 +71,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "cc3f5de4d9200e8ce37bb2a427102e5133dca9fb"
+                "reference": "cfa8f4d485f4a571aaa837bb5b3787b8c6501244"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master#c34e65aca73902b311a374b2f4a0a1d4ee9bf792",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "1354067345",
+            "time": "1354207641",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -129,7 +129,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "d70a06f566e59082b6393682285dc046d2ddf651"
+                "reference": "a1d8b653aa8b35928dfd7265328b1119b4fd9832"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -149,7 +149,7 @@
                 "doctrine/doctrine-orm-module": "dev-master",
                 "doctrine/doctrine-module": "dev-master"
             },
-            "time": "1354201673",
+            "time": "1354394879",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -283,19 +283,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal",
-                "reference": "d1e83ae2375d2771cc4be11139f1ee17bddcea28"
+                "reference": "2e2336a6c1c3dd3897f9419df9675a5fb0a0edda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/archive/d1e83ae2375d2771cc4be11139f1ee17bddcea28.zip",
-                "reference": "d1e83ae2375d2771cc4be11139f1ee17bddcea28",
+                "url": "https://github.com/doctrine/dbal/archive/2e2336a6c1c3dd3897f9419df9675a5fb0a0edda.zip",
+                "reference": "2e2336a6c1c3dd3897f9419df9675a5fb0a0edda",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "doctrine/common": ">=2.3-dev,<2.5-dev"
             },
-            "time": "1353866320",
+            "time": "1354311197",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -346,12 +346,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/DoctrineModule.git",
-                "reference": "e9aca222893bd616a8912a26bef0c0b3f567fe3a"
+                "reference": "f31d3bb72edc6dfbe37243ec36be1206d3d5900f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineModule/archive/e9aca222893bd616a8912a26bef0c0b3f567fe3a.zip",
-                "reference": "e9aca222893bd616a8912a26bef0c0b3f567fe3a",
+                "url": "https://github.com/doctrine/DoctrineModule/archive/f31d3bb72edc6dfbe37243ec36be1206d3d5900f.zip",
+                "reference": "f31d3bb72edc6dfbe37243ec36be1206d3d5900f",
                 "shasum": ""
             },
             "require": {
@@ -361,11 +361,16 @@
                 "zendframework/zendframework": "2.*",
                 "doctrine/data-fixtures": "1.*"
             },
-            "time": "1352406175",
+            "time": "1354326906",
             "bin": [
                 "bin/doctrine-module"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.6.x-dev"
+                }
+            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
@@ -416,12 +421,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/DoctrineORMModule.git",
-                "reference": "d51b5b28746e6114bee912045694f852076c6630"
+                "reference": "977699076ef5e06cae5f8b516cb1683a20ab67d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineORMModule/archive/d51b5b28746e6114bee912045694f852076c6630.zip",
-                "reference": "d51b5b28746e6114bee912045694f852076c6630",
+                "url": "https://github.com/doctrine/DoctrineORMModule/archive/977699076ef5e06cae5f8b516cb1683a20ab67d3.zip",
+                "reference": "977699076ef5e06cae5f8b516cb1683a20ab67d3",
                 "shasum": ""
             },
             "require": {
@@ -438,8 +443,13 @@
             "suggest": {
                 "zendframework/zend-developer-tools": "zend-developer-tools if you want to profile operations executed by the ORM during development"
             },
-            "time": "1351004249",
+            "time": "1354216336",
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.6.x-dev"
+                }
+            },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
@@ -541,12 +551,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "95334e976446a855c9e0c0b9cab1a8040e46112f"
+                "reference": "4bb6ff637c9312c05562928fb67fb439809de73b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/archive/95334e976446a855c9e0c0b9cab1a8040e46112f.zip",
-                "reference": "95334e976446a855c9e0c0b9cab1a8040e46112f",
+                "url": "https://github.com/doctrine/doctrine2/archive/4bb6ff637c9312c05562928fb67fb439809de73b.zip",
+                "reference": "4bb6ff637c9312c05562928fb67fb439809de73b",
                 "shasum": ""
             },
             "require": {
@@ -558,7 +568,7 @@
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "1354051558",
+            "time": "1354308229",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
@@ -658,12 +668,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/zendframework/zf2.git",
-                "reference": "c00c516de69cd968e338fffbab677032c9d06e80"
+                "reference": "93cda37789e52ea75b7202dde98932fe8d3b57c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/zendframework/zf2/archive/c00c516de69cd968e338fffbab677032c9d06e80.zip",
-                "reference": "c00c516de69cd968e338fffbab677032c9d06e80",
+                "url": "https://github.com/zendframework/zf2/archive/93cda37789e52ea75b7202dde98932fe8d3b57c0.zip",
+                "reference": "93cda37789e52ea75b7202dde98932fe8d3b57c0",
                 "shasum": ""
             },
             "require": {
@@ -729,7 +739,7 @@
                 "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
                 "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler"
             },
-            "time": "1353942910",
+            "time": "1354233413",
             "bin": [
                 "bin/classmap_generator.php"
             ],
