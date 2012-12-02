@@ -32,6 +32,7 @@
                     "Composer\\Installers\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -66,45 +67,6 @@
             ]
         },
         {
-            "name": "ctrl-f5/CtrlBlog",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "3a7f4fe5958c5ea4d0f057172a976165ce015ff9"
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "zendframework/zendframework": "dev-master",
-                "ctrl-f5/ctrllib": "dev-master",
-                "ctrl-f5/ctrlauth": "dev-master"
-            },
-            "time": "2012-12-02 21:16:05",
-            "type": "library",
-            "extra": {
-                "installer-paths": {
-                    "public/js/vendor/{$vendor}/{$name}/": [
-                        "ctrl-f5/ctrljs"
-                    ]
-                }
-            },
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "CtrlBlog\\": "src/"
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "CtrlBlog",
-            "homepage": "http://ctrl-f5.net/",
-            "keywords": [
-                "ctrl-f5",
-                "zf2"
-            ]
-        },
-        {
             "name": "ctrl-f5/ctrlAuth",
             "version": "dev-master",
             "source": {
@@ -135,6 +97,45 @@
                 "zf2",
                 "module",
                 "auth"
+            ]
+        },
+        {
+            "name": "ctrl-f5/ctrlBlog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/ctrl-f5/ctrlBlog",
+                "reference": "1ebefe9d4214b79fb6b53e0d0103a746948a99f3"
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zendframework": "dev-master",
+                "ctrl-f5/ctrllib": "dev-master",
+                "ctrl-f5/ctrlauth": "dev-master"
+            },
+            "time": "2012-12-02 21:41:31",
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "public/js/vendor/{$vendor}/{$name}/": [
+                        "ctrl-f5/ctrljs"
+                    ]
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "CtrlBlog\\": "src/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "CtrlBlog",
+            "homepage": "http://ctrl-f5.net/",
+            "keywords": [
+                "ctrl-f5",
+                "zf2"
             ]
         },
         {
@@ -236,6 +237,7 @@
                     "Doctrine\\Common\\": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -300,6 +302,7 @@
                     "Doctrine\\Common\\DataFixtures": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -347,6 +350,7 @@
                     "Doctrine\\DBAL\\": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -416,6 +420,7 @@
                     "DoctrineModule\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -496,6 +501,7 @@
                     "DoctrineORMModuleTest\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -563,6 +569,7 @@
                     "Doctrine\\DBAL\\Migrations": "lib"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL"
             ],
@@ -624,6 +631,7 @@
                     "Doctrine\\ORM\\": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -685,6 +693,7 @@
                     "Symfony\\Component\\Console\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -796,6 +805,7 @@
                     "ZendTest\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
