@@ -11,7 +11,7 @@
 
         <field name="displayName" column="displayName" type="string" length="255" nullable="false" uniaue="false" />
 
-        <one-to-one field="authUser" target-entity="Ctrl\Module\Auth\Domain\User">
+        <one-to-one field="authUser" target-entity="CtrlAuth\Domain\User">
             <cascade><cascade-remove /></cascade>
             <join-column name="ctrlAuthUser_id" referenced-column-name="id" on-delete="CASCADE" on-update="CASCADE"/>
         </one-to-one>

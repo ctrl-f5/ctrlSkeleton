@@ -4,7 +4,7 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'App',
-        'Ctrl\Module\Auth',
+        'CtrlAuth',
         'Ctrl',
     ),
     'module_listener_options' => array(
@@ -14,7 +14,7 @@ return array(
         'module_paths' => array(
             'App' => './module/App/',
             './vendor',
-            'Ctrl\Module\Auth' => './vendor/ctrl-f5/ctrlAuth/',
+            'CtrlAuth' => './vendor/ctrl-f5/ctrlAuth/',
             'Ctrl' => './vendor/ctrl-f5/ctrllib/',
         ),
     ),

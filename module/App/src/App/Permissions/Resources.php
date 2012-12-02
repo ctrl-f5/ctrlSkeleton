@@ -14,8 +14,8 @@ class Resources extends \Ctrl\Permissions\Resources
      */
     const ACTION_USER_REMOVE = 'User.remove';
 
-    const RESOURCE_ROUTE_AUTH = 'routes.Ctrl\Module\Auth\Controller';
-    const RESOURCE_ROUTE_LOGIN = 'routes.Ctrl\Module\Auth\Controller\Login';
+    const RESOURCE_ROUTE_AUTH = 'routes.CtrlAuth\Controller';
+    const RESOURCE_ROUTE_LOGIN = 'routes.CtrlAuth\Controller\Login';
 
     public function getSets()
     {
