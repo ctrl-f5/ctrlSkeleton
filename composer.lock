@@ -1,5 +1,5 @@
 {
-    "hash": "da52f60e0172909848236dd1a0c337e9",
+    "hash": "a9ec0977c52e1a5b7ce3df56bce1f2eb",
     "packages": [
         {
             "name": "composer/installers",
@@ -66,19 +66,58 @@
             ]
         },
         {
+            "name": "ctrl-f5/CtrlBlog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/ctrl-f5/ctrlBlog",
+                "reference": "3a7f4fe5958c5ea4d0f057172a976165ce015ff9"
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "zendframework/zendframework": "dev-master",
+                "ctrl-f5/ctrllib": "dev-master",
+                "ctrl-f5/ctrlauth": "dev-master"
+            },
+            "time": "2012-12-02 21:16:05",
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "public/js/vendor/{$vendor}/{$name}/": [
+                        "ctrl-f5/ctrljs"
+                    ]
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "CtrlBlog\\": "src/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "CtrlBlog",
+            "homepage": "http://ctrl-f5.net/",
+            "keywords": [
+                "ctrl-f5",
+                "zf2"
+            ]
+        },
+        {
             "name": "ctrl-f5/ctrlAuth",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "334ebdc5b88ec835ca918caac555b7ccbfd247c2"
+                "reference": "1b484d28d0454d30dfa2a0319c815e4bd96a8bd2"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "2012-12-02 17:27:57",
+            "time": "2012-12-02 20:45:26",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -129,7 +168,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "f3682c53adcb2188395bc695b006642e9c675b9a"
+                "reference": "22081151f060aa49fffd3b59542a5fa95d02530c"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -149,7 +188,7 @@
                 "doctrine/doctrine-orm-module": "dev-master",
                 "doctrine/doctrine-module": "dev-master"
             },
-            "time": "2012-12-02 15:48:11",
+            "time": "2012-12-02 20:41:45",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -779,6 +818,7 @@
         "doctrine/doctrine-module": 20,
         "ctrl-f5/ctrllib": 20,
         "ctrl-f5/ctrlauth": 20,
+        "ctrl-f5/ctrlblog": 20,
         "ctrl-f5/ctrljs": 20
     }
 }

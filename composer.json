@@ -18,6 +18,10 @@
         },
         {
             "type": "git",
+            "url": "http://github.com/ctrl-f5/ctrlBlog"
+        },
+        {
+            "type": "git",
             "url": "http://github.com/ctrl-f5/ctrljs"
         }
     ],
@@ -29,6 +33,7 @@
         "doctrine/doctrine-module": "dev-master",
         "ctrl-f5/ctrllib": "dev-master",
         "ctrl-f5/ctrlAuth": "dev-master",
+        "ctrl-f5/ctrlBlog": "dev-master",
         "ctrl-f5/ctrljs": "dev-master"
     },
     "extra": {

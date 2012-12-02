@@ -4,6 +4,7 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'App',
+        'CtrlBlog',
         'CtrlAuth',
         'Ctrl',
     ),
@@ -14,6 +15,7 @@ return array(
         'module_paths' => array(
             'App' => './module/App/',
             './vendor',
+            'CtrlBlog' => './vendor/ctrl-f5/ctrlBlog/',
             'CtrlAuth' => './vendor/ctrl-f5/ctrlAuth/',
             'Ctrl' => './vendor/ctrl-f5/ctrllib/',
         ),
