@@ -23,10 +23,19 @@
 
     <target name="orm-validate" description="validates the schema with the doctrine mappings">
         <exec
-                command="php doctrine.php orm:validate-schema --verbose'"
+                command="./doctrine.php orm:validate-schema --verbose"
                 dir="${build.dir}"
-                checkreturn="false"
+                checkreturn="true"
                 passthru="true" />
+    </target>
+
+    <target name="orm-sql-from-entities" description="creates 001.sql with sql generated from doctrine from entities">
+        <exec
+            command="./create-first-delta-from-entities.php"
+            dir="${build.dir}"
+            checkreturn="true"
+            passthru="true"
+        />
     </target>
 
     <target name="db-migrate" description="Database Migrations">
@@ -66,6 +75,12 @@
             dir="${build.dir}"
             checkreturn="true" />
     </target>
+
+    <target name="orm-init" description="drops, generates new sql from entities, creates, migrates"
+            depends="db-drop, orm-sql-from-entities, db-create, db-migrate" />
+
+    <target name="orm-init-sampledata" description="drops, generates new sql from entities, creates, migrates, loads sample data"
+            depends="db-drop, orm-sql-from-entities, db-create, db-migrate, db-load-sampledata" />
 
     <target name="db-reset" description="drops, creates and migrates"
             depends="db-drop, db-create, db-migrate" />

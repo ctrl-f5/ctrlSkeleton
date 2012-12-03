@@ -13,8 +13,8 @@ return array(
             'config/autoload/{,*.}{global,local}.php',
         ),
         'module_paths' => array(
-            'App' => './module/App/',
             './vendor',
+            'App' => './module/App/',
             'CtrlBlog' => './vendor/ctrl-f5/ctrlBlog/',
             'CtrlAuth' => './vendor/ctrl-f5/ctrlAuth/',
             'Ctrl' => './vendor/ctrl-f5/ctrllib/',

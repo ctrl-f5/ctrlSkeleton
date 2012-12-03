@@ -17,4 +17,23 @@ $helperSet = new HelperSet(array(
     'em' => new EntityManagerHelper($em)
 ));
 
-ConsoleRunner::run($helperSet);
+$classes = $em->getMetadataFactory()->getAllMetadata();
+$schemaTool = new \Doctrine\ORM\Tools\SchemaTool($em);
+$sql = $schemaTool->getCreateSchemaSql($classes);
+$filtered = array();
+foreach ($sql as $key => $line) {
+    if (strpos($line, 'DROP TABLE') !== false && strpos($line, 'changelog') !== false) {
+        unset($sql[$key], $line);
+        continue;
+    }
+    $sql[$key] = $line.';'.PHP_EOL;
+}
+$sql[] = PHP_EOL;
+$sql[] = '--//@UNDO';
+$sql[] = PHP_EOL;
+$sql[] = PHP_EOL;
+
+if (false == file_put_contents(__DIR__.'/db/delta/001.sql', $sql)) {
+    return 1;
+}
+return 0;
