@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers",
-                "reference": "a3d52d8414ec26533a540ebacbc1c20be568c83f"
+                "reference": "f84aa7a6fdba08eacc18ca9b098d3a59dd604238"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/installers/archive/a3d52d8414ec26533a540ebacbc1c20be568c83f.zip",
-                "reference": "a3d52d8414ec26533a540ebacbc1c20be568c83f",
+                "url": "https://github.com/composer/installers/archive/f84aa7a6fdba08eacc18ca9b098d3a59dd604238.zip",
+                "reference": "f84aa7a6fdba08eacc18ca9b098d3a59dd604238",
                 "shasum": ""
             },
             "replace": {
@@ -21,7 +21,7 @@
             "require-dev": {
                 "composer/composer": "1.0.*@dev"
             },
-            "time": "2012-11-21 05:41:09",
+            "time": "2012-12-03 17:52:37",
             "type": "composer-installer",
             "extra": {
                 "class": "Composer\\Installers\\Installer"
@@ -63,7 +63,8 @@
                 "ppi",
                 "silverstripe",
                 "kohana",
-                "mako"
+                "mako",
+                "agl"
             ]
         },
         {
@@ -105,7 +106,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "2af18dc5101311d6bfbbbda142a5ee650c36d171"
+                "reference": "02f04412820b037b23d7629b54c030626e0090a7"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -114,7 +115,7 @@
                 "ctrl-f5/ctrlauth": "dev-master",
                 "ctrl-f5/markdown-oo-php": "dev-master#2efa6ba"
             },
-            "time": "2012-12-03 01:28:49",
+            "time": "2012-12-03 21:10:57",
             "type": "library",
             "extra": {
                 "installer-paths": {
@@ -170,7 +171,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "22081151f060aa49fffd3b59542a5fa95d02530c"
+                "reference": "d58b820750c9141ce38541960a8c16193c5bde7e"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -190,7 +191,7 @@
                 "doctrine/doctrine-orm-module": "dev-master",
                 "doctrine/doctrine-module": "dev-master"
             },
-            "time": "2012-12-02 20:41:45",
+            "time": "2012-12-03 21:09:52",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -742,12 +743,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/zendframework/zf2.git",
-                "reference": "93cda37789e52ea75b7202dde98932fe8d3b57c0"
+                "reference": "ef5a8449ae2791ce9d9ca6f68e48cc9ba2670144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/zendframework/zf2/archive/93cda37789e52ea75b7202dde98932fe8d3b57c0.zip",
-                "reference": "93cda37789e52ea75b7202dde98932fe8d3b57c0",
+                "url": "https://github.com/zendframework/zf2/archive/ef5a8449ae2791ce9d9ca6f68e48cc9ba2670144.zip",
+                "reference": "ef5a8449ae2791ce9d9ca6f68e48cc9ba2670144",
                 "shasum": ""
             },
             "require": {
@@ -813,7 +814,7 @@
                 "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
                 "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler"
             },
-            "time": "2012-11-29 23:56:53",
+            "time": "2012-12-03 20:35:44",
             "bin": [
                 "bin/classmap_generator.php"
             ],
