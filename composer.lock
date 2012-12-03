@@ -72,14 +72,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "1b484d28d0454d30dfa2a0319c815e4bd96a8bd2"
+                "reference": "bc1401100762274389fc50815d3a0cbeca040fa2"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "2012-12-02 20:45:26",
+            "time": "2012-12-03 00:31:15",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -105,7 +105,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "1ebefe9d4214b79fb6b53e0d0103a746948a99f3"
+                "reference": "2ebc1f02724872661631697aea6f3de3c3b97362"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -113,7 +113,7 @@
                 "ctrl-f5/ctrllib": "dev-master",
                 "ctrl-f5/ctrlauth": "dev-master"
             },
-            "time": "2012-12-02 21:41:31",
+            "time": "2012-12-03 00:31:53",
             "type": "library",
             "extra": {
                 "installer-paths": {
