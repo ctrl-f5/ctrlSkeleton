@@ -1,5 +1,5 @@
 {
-    "hash": "a9ec0977c52e1a5b7ce3df56bce1f2eb",
+    "hash": "f1814aecb8ac71fef1d855e024c5e498",
     "packages": [
         {
             "name": "composer/installers",
@@ -105,15 +105,16 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "2ebc1f02724872661631697aea6f3de3c3b97362"
+                "reference": "2af18dc5101311d6bfbbbda142a5ee650c36d171"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master",
-                "ctrl-f5/ctrlauth": "dev-master"
+                "ctrl-f5/ctrlauth": "dev-master",
+                "ctrl-f5/markdown-oo-php": "dev-master#2efa6ba"
             },
-            "time": "2012-12-03 00:31:53",
+            "time": "2012-12-03 01:28:49",
             "type": "library",
             "extra": {
                 "installer-paths": {
@@ -206,6 +207,31 @@
                 "ctrl-f5",
                 "zf2"
             ]
+        },
+        {
+            "name": "ctrl-f5/markdown-oo-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/ctrl-f5/markdown-oo-php",
+                "reference": "2efa6ba2e748062c5e98260e4e95f734c448d4ad"
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "2012-12-03 01:15:48",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Markdown\\": "./"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Markdown implementation forked from garygolden",
+            "homepage": "https://github.com/garygolden/markdown-oo-php"
         },
         {
             "name": "doctrine/common",
