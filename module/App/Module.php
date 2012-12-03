@@ -48,9 +48,14 @@ class Module
                 $navigation = $serviceManager->get('navigation');
                 /** @var $navHelper \Ctrl\View\Helper\Navigation\Navigation */
                 $navHelper = $serviceManager->get('ViewHelperManager')->get('Navigation');
-                $navHelper->setAcl($serviceManager->get('CtrlAuthAcl'));
-                $navHelper->setRoles($serviceManager->get('DomainServiceLoader')->get('CtrlAuthUser')->getAuthenticatedUser()->getRoles()->toArray());
-                $navHelper->setUseAcl(true);
+                // try if we have acl to load
+                try {
+                    $navHelper->setAcl($serviceManager->get('CtrlAuthAcl'));
+                    $navHelper->setRoles($serviceManager->get('DomainServiceLoader')->get('CtrlAuthUser')->getAuthenticatedUser()->getRoles()->toArray());
+                    $navHelper->setUseAcl(true);
+                } catch (\Exception $e) {
+                    // auth module not loaded?
+                }
                 $view->navigation = array(
                     'main' => $navigation,
                 );

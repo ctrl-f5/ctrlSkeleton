@@ -34,28 +34,36 @@ class AppNavigationFactory extends AbstractNavigationFactory
         $router      = $application->getMvcEvent()->getRouter();
 
         // add ctrlBlog module navigation
-        $blogNav = $serviceLocator->get('CtrlBlogNavigation');
-        $blogItem = array(
-            'label' => 'Blog Module',
-            'route' => 'ctrl_blog',
-            'pages' => $blogNav->getPages(),
-            'type' => 'Ctrl\Navigation\Page\Mvc',
-            'router' => $router,
-            'routeMatch' => $routeMatch,
-        );
-        $navigation->addPage($blogItem);
+        try {
+            $blogNav = $serviceLocator->get('CtrlBlogNavigation');
+            $blogItem = array(
+                'label' => 'Blog Module',
+                'route' => 'ctrl_blog',
+                'pages' => $blogNav->getPages(),
+                'type' => 'Ctrl\Navigation\Page\Mvc',
+                'router' => $router,
+                'routeMatch' => $routeMatch,
+            );
+            $navigation->addPage($blogItem);
+        } catch (\Exception $e) {
+            // blog module not loaded?
+        }
 
         // add ctrlAuth module navigation
-        $authNav = $serviceLocator->get('CtrlAuthNavigation');
-        $authItem = array(
-            'label' => 'Auth Module',
-            'route' => 'ctrl_auth',
-            'pages' => $authNav->getPages(),
-            'type' => 'Ctrl\Navigation\Page\Mvc',
-            'router' => $router,
-            'routeMatch' => $routeMatch,
-        );
-        $navigation->addPage($authItem);
+        try {
+            $authNav = $serviceLocator->get('CtrlAuthNavigation');
+            $authItem = array(
+                'label' => 'Auth Module',
+                'route' => 'ctrl_auth',
+                'pages' => $authNav->getPages(),
+                'type' => 'Ctrl\Navigation\Page\Mvc',
+                'router' => $router,
+                'routeMatch' => $routeMatch,
+            );
+            $navigation->addPage($authItem);
+        } catch (\Exception $e) {
+            // auth module not loaded?
+        }
 
         return $navigation;
     }

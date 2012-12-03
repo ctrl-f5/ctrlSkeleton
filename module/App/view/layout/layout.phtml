@@ -13,12 +13,15 @@
                         ->appendStylesheet($this->basePath() . '/modules/dev-ctrl/css/style.css')
                         ->appendStylesheet($this->basePath() . '/css/style.css') ?>
 
-        <!-- vendor scripts -->
         <?php
-            echo $this->ctrlJsLoader()->loadScripts(true);
+            // vendor scripts
+            $this->ctrlJsLoader()->loadScripts(true);
+            // Custom Scripts
+            $this->headScript()->appendFile($this->basePath() . '/js/init.js');
+            // echo once!
+            echo $this->headScript();
         ?>
-        <!-- Custom Scripts -->
-        <?php echo $this->headScript()->appendFile($this->basePath() . '/js/init.js'); ?>
+
     </head>
     <body>
 
