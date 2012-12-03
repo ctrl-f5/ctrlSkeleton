@@ -33,7 +33,19 @@ class AppNavigationFactory extends AbstractNavigationFactory
         $routeMatch  = $application->getMvcEvent()->getRouteMatch();
         $router      = $application->getMvcEvent()->getRouter();
 
-        // add authentication module navigation
+        // add ctrlBlog module navigation
+        $blogNav = $serviceLocator->get('CtrlBlogNavigation');
+        $blogItem = array(
+            'label' => 'Blog Module',
+            'route' => 'ctrl_blog',
+            'pages' => $blogNav->getPages(),
+            'type' => 'Ctrl\Navigation\Page\Mvc',
+            'router' => $router,
+            'routeMatch' => $routeMatch,
+        );
+        $navigation->addPage($blogItem);
+
+        // add ctrlAuth module navigation
         $authNav = $serviceLocator->get('CtrlAuthNavigation');
         $authItem = array(
             'label' => 'Auth Module',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ctrl\Blog;
+namespace App;
 
 return array(
     'controllers' => array(

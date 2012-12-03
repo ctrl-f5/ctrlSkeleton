@@ -1,5 +1,4 @@
 <?php echo $this->doctype(); ?>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -31,7 +30,7 @@
         </div>
         <div class="navbar-inner">
             <div class="container">
-                <?php echo $this->navigation()->menu($this->navigation['main'])->renderMenu(null, array('minDepth' => 1, 'maxDepth' => 1)); ?>
+                <?php echo $this->navigation()->menu($this->navigation['main'])->setOnlyActiveBranch(true)->renderMenu(null, array('minDepth' => 1, 'maxDepth' => 1)); ?>
             </div>
         </div>
     </div>
@@ -48,7 +47,7 @@
         <p>&copy; 0.0.0 development</p>
     </footer>
 
-    </div> <!-- /container -->
+    </div>
 
     </body>
 </html>
