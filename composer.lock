@@ -73,14 +73,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "5718367c166f77e35317e2977c9949b81941a88a"
+                "reference": "1acd61d71554354d0f6940ad7109f42b14b588e6"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "2012-12-05 03:29:01",
+            "time": "2012-12-06 05:24:08",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -106,7 +106,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "324a668ba92b851af047dff5320c03bb9fd237cf"
+                "reference": "9cef44137d3918e90c0dcaf1fdc769d574c72216"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -115,7 +115,7 @@
                 "ctrl-f5/ctrlauth": "dev-master",
                 "ctrl-f5/markdown-oo-php": "dev-master#2efa6ba"
             },
-            "time": "2012-12-03 21:18:55",
+            "time": "2012-12-06 05:24:42",
             "type": "library",
             "extra": {
                 "installer-paths": {
@@ -171,7 +171,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "3e7d2256cdcc7c52dc55a487f00613530d0205f1"
+                "reference": "27ef17ae68fe4b86f722ec9597336dc3718af795"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -191,7 +191,7 @@
                 "doctrine/doctrine-orm-module": "dev-master",
                 "doctrine/doctrine-module": "dev-master"
             },
-            "time": "2012-12-05 03:27:56",
+            "time": "2012-12-06 05:23:36",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -240,18 +240,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common",
-                "reference": "b91837135ce102d2e95fb394b43d8d1d47cde95c"
+                "reference": "d514e3920656921ba1148f16a4089222c58bc83a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/archive/b91837135ce102d2e95fb394b43d8d1d47cde95c.zip",
-                "reference": "b91837135ce102d2e95fb394b43d8d1d47cde95c",
+                "url": "https://github.com/doctrine/common/archive/d514e3920656921ba1148f16a4089222c58bc83a.zip",
+                "reference": "d514e3920656921ba1148f16a4089222c58bc83a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-12-04 14:57:34",
+            "time": "2012-12-05 12:03:39",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -743,12 +743,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/zendframework/zf2.git",
-                "reference": "2cdd47126f71fa65d4b2459233cb8d476b1df2ad"
+                "reference": "ca1e7b67148ba165af8900b586a2cec9d50e34b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/zendframework/zf2/archive/2cdd47126f71fa65d4b2459233cb8d476b1df2ad.zip",
-                "reference": "2cdd47126f71fa65d4b2459233cb8d476b1df2ad",
+                "url": "https://github.com/zendframework/zf2/archive/ca1e7b67148ba165af8900b586a2cec9d50e34b7.zip",
+                "reference": "ca1e7b67148ba165af8900b586a2cec9d50e34b7",
                 "shasum": ""
             },
             "require": {
@@ -814,7 +814,7 @@
                 "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
                 "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler"
             },
-            "time": "2012-12-03 22:23:13",
+            "time": "2012-12-05 14:41:26",
             "bin": [
                 "bin/classmap_generator.php"
             ],
