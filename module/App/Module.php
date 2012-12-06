@@ -27,16 +27,25 @@ class Module
         //feed the flashMessenger vars into the layout
         /** @var $e \Zend\Mvc\MvcEvent */
         $eventManager->attach(\Zend\Mvc\MvcEvent::EVENT_RENDER, function ($e) {
+
             $serviceManager = $e->getApplication()->getServiceManager();
+            $config = $serviceManager->get('Configuration');
             $view = $e->getViewModel();
+
             if ($view->getTemplate() == 'layout/layout') {
-                /**
-                 * add flash messages
-                 */
+
+                /** @var $viewManager \Zend\Mvc\View\Http\ViewManager */
+                $viewManager = $serviceManager->get('ViewManager');
+
+                // add flash messages
                 /** @var $flashMessenger \Zend\Mvc\Controller\Plugin\FlashMessenger */
                 $flashMessenger = $serviceManager->get('ControllerPluginManager')->get('flashMessenger');
+                $msgNamespaces = array('error', 'success', 'info');
+                if ($viewManager->getExceptionStrategy()->displayExceptions()) {
+                    $msgNamespaces[] = 'debug';
+                }
                 $messages = array();
-                foreach (array('error', 'success', 'info') as $ns) {
+                foreach ($msgNamespaces as $ns) {
                     if ($flashMessenger->setNamespace($ns)->hasMessages()) {
                         $messages[$ns] = $flashMessenger->getMessages();
                     }
@@ -50,11 +59,14 @@ class Module
                 $navHelper = $serviceManager->get('ViewHelperManager')->get('Navigation');
                 // try if we have acl to load
                 try {
-                    $navHelper->setAcl($serviceManager->get('CtrlAuthAcl'));
+                    /**
+                     * DEBUG: DISABLED ACL FOR NAVIGATION
+                     */
+                    $acl = $serviceManager->get('CtrlAuthAcl');
+                    //$navHelper->setAcl($acl);
                     $navHelper->setRoles($serviceManager->get('DomainServiceLoader')->get('CtrlAuthUser')->getAuthenticatedUser()->getRoles()->toArray());
-                    $navHelper->setUseAcl(true);
                 } catch (\Exception $e) {
-                    // auth module not loaded?
+                    throw $e;
                 }
                 $view->navigation = array(
                     'main' => $navigation,

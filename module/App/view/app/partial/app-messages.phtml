@@ -3,9 +3,26 @@
     <?php foreach ($msgs as $msg): ?>
         <div class="alert alert-block alert-<?php echo $cat; ?>">
             <a class="close" data-dismiss="alert" href="#">×</a>
-            <h4 class="alert-heading">Woops</h4>
+            <h4 class="alert-heading"><?php
+                switch ($cat) {
+                    case 'success':
+                        echo 'Success';
+                        break;
+                    case 'info':
+                        echo 'Info';
+                        break;
+                    case 'debug':
+                        echo 'debug';
+                        break;
+                    case 'error':
+                    default:
+                        echo 'Woops';
+                        break;
+                }
+            ?></h4>
             <?php echo $msg; ?>
         </div>
     <?php endforeach; ?>
 <?php endforeach; ?>
+<?php $this->appMessages = array(); ?>
 <?php endif; ?>

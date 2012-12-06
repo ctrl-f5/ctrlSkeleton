@@ -38,7 +38,7 @@ class AppNavigationFactory extends AbstractNavigationFactory
             $blogNav = $serviceLocator->get('CtrlBlogNavigation');
             $blogItem = array(
                 'label' => 'Blog Module',
-                'route' => 'ctrl_blog',
+                'route' => 'ctrl_blog/default',
                 'pages' => $blogNav->getPages(),
                 'type' => 'Ctrl\Navigation\Page\Mvc',
                 'router' => $router,
@@ -47,6 +47,7 @@ class AppNavigationFactory extends AbstractNavigationFactory
             $navigation->addPage($blogItem);
         } catch (\Exception $e) {
             // blog module not loaded?
+            throw $e;
         }
 
         // add ctrlAuth module navigation
@@ -54,7 +55,7 @@ class AppNavigationFactory extends AbstractNavigationFactory
             $authNav = $serviceLocator->get('CtrlAuthNavigation');
             $authItem = array(
                 'label' => 'Auth Module',
-                'route' => 'ctrl_auth',
+                'route' => 'ctrl_auth/default',
                 'pages' => $authNav->getPages(),
                 'type' => 'Ctrl\Navigation\Page\Mvc',
                 'router' => $router,
@@ -63,6 +64,7 @@ class AppNavigationFactory extends AbstractNavigationFactory
             $navigation->addPage($authItem);
         } catch (\Exception $e) {
             // auth module not loaded?
+            throw $e;
         }
 
         return $navigation;

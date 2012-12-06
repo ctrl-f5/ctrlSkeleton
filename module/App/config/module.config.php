@@ -30,6 +30,7 @@ return array(
     ),
     'acl' => array(
         'resources' => array(
+            'AppResources' => 'App\Permissions\Resources'
         )
     ),
     'doctrine' => array(
@@ -50,7 +51,7 @@ return array(
         'app' => array(
             array(
                 'label' => 'Home',
-                'route' => 'default',
+                'route' => 'default/default',
                 'type' => 'Ctrl\Navigation\Page\Mvc',
                 'resource' => 'routes.App\Controller',
                 'params' => array(

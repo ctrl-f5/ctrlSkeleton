@@ -41,12 +41,8 @@ class Resources extends \Ctrl\Permissions\Resources
             )
         );
 
-        if ($set) {
-            if (isset($set, $resources)) {
-                return $this->flattenResourceArray($resources[$set], $set);
-            }
-            return array();
-        }
-        return $set;
+        $resources = $this->assertResources($resources);
+
+        return $resources;
     }
 }

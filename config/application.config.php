@@ -21,6 +21,6 @@ return array(
         ),
     ),
     'view_manager' => array(
-        'display_exceptions'       => true,
+        'display_exceptions'       => false,
     ),
 );

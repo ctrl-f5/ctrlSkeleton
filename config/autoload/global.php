@@ -43,6 +43,6 @@ return array(
         ),
     ),
     'phpSettings' => array(
-        'display_errors' => '1',
+        'display_errors' => 'On',
     ),
 );

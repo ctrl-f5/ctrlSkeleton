@@ -73,14 +73,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "b639dde432627929452674947e33ae75d32cc258"
+                "reference": "5718367c166f77e35317e2977c9949b81941a88a"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "2012-12-03 22:23:14",
+            "time": "2012-12-05 03:29:01",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -171,7 +171,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "2eef485ef4d4107fe93d5b0b34494aaa7f5abc55"
+                "reference": "3e7d2256cdcc7c52dc55a487f00613530d0205f1"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -191,7 +191,7 @@
                 "doctrine/doctrine-orm-module": "dev-master",
                 "doctrine/doctrine-module": "dev-master"
             },
-            "time": "2012-12-03 21:56:11",
+            "time": "2012-12-05 03:27:56",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -240,18 +240,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common",
-                "reference": "a836c86c13e964051549e234250cf665a5f5a190"
+                "reference": "b91837135ce102d2e95fb394b43d8d1d47cde95c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/archive/a836c86c13e964051549e234250cf665a5f5a190.zip",
-                "reference": "a836c86c13e964051549e234250cf665a5f5a190",
+                "url": "https://github.com/doctrine/common/archive/b91837135ce102d2e95fb394b43d8d1d47cde95c.zip",
+                "reference": "b91837135ce102d2e95fb394b43d8d1d47cde95c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-11-22 19:41:13",
+            "time": "2012-12-04 14:57:34",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -624,12 +624,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "4bb6ff637c9312c05562928fb67fb439809de73b"
+                "reference": "df1336dd262faf40d5a343c1d21cbbc4aa8192d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/archive/4bb6ff637c9312c05562928fb67fb439809de73b.zip",
-                "reference": "4bb6ff637c9312c05562928fb67fb439809de73b",
+                "url": "https://github.com/doctrine/doctrine2/archive/df1336dd262faf40d5a343c1d21cbbc4aa8192d9.zip",
+                "reference": "df1336dd262faf40d5a343c1d21cbbc4aa8192d9",
                 "shasum": ""
             },
             "require": {
@@ -641,7 +641,7 @@
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "2012-11-30 20:43:49",
+            "time": "2012-12-04 12:29:01",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
