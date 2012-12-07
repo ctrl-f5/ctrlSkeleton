@@ -73,14 +73,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "1acd61d71554354d0f6940ad7109f42b14b588e6"
+                "reference": "89c04d9ab9d63cb91b500aeecc937c98bdb99e58"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "2012-12-06 05:24:08",
+            "time": "2012-12-07 03:35:47",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -171,7 +171,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "db7ae6fcde3f4a92d7d4cb17568ede063bcf12e1"
+                "reference": "1ea6cf08475a65dea49ce72da8744dfb08c4a316"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -191,7 +191,7 @@
                 "doctrine/doctrine-orm-module": "dev-master",
                 "doctrine/doctrine-module": "dev-master"
             },
-            "time": "2012-12-06 17:32:42",
+            "time": "2012-12-07 03:36:09",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -416,12 +416,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/DoctrineModule.git",
-                "reference": "f31d3bb72edc6dfbe37243ec36be1206d3d5900f"
+                "reference": "aea8df57f214330ed34303f0a6b6ff80daf86a78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineModule/archive/f31d3bb72edc6dfbe37243ec36be1206d3d5900f.zip",
-                "reference": "f31d3bb72edc6dfbe37243ec36be1206d3d5900f",
+                "url": "https://github.com/doctrine/DoctrineModule/archive/aea8df57f214330ed34303f0a6b6ff80daf86a78.zip",
+                "reference": "aea8df57f214330ed34303f0a6b6ff80daf86a78",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
                 "zendframework/zendframework": "2.*",
                 "doctrine/data-fixtures": "1.*"
             },
-            "time": "2012-12-01 01:55:06",
+            "time": "2012-12-06 19:46:51",
             "bin": [
                 "bin/doctrine-module"
             ],
@@ -492,12 +492,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/DoctrineORMModule.git",
-                "reference": "977699076ef5e06cae5f8b516cb1683a20ab67d3"
+                "reference": "24830934f748497f77cf22f9af6cab4612fb0886"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineORMModule/archive/977699076ef5e06cae5f8b516cb1683a20ab67d3.zip",
-                "reference": "977699076ef5e06cae5f8b516cb1683a20ab67d3",
+                "url": "https://github.com/doctrine/DoctrineORMModule/archive/24830934f748497f77cf22f9af6cab4612fb0886.zip",
+                "reference": "24830934f748497f77cf22f9af6cab4612fb0886",
                 "shasum": ""
             },
             "require": {
@@ -514,7 +514,7 @@
             "suggest": {
                 "zendframework/zend-developer-tools": "zend-developer-tools if you want to profile operations executed by the ORM during development"
             },
-            "time": "2012-11-29 19:12:16",
+            "time": "2012-12-06 19:52:20",
             "type": "library",
             "extra": {
                 "branch-alias": {
