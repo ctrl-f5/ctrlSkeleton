@@ -42,8 +42,8 @@ class AppNavigationFactory extends AbstractNavigationFactory
                 'pages' => $blogNav->getPages(),
                 'type' => 'Ctrl\Navigation\Page\Mvc',
                 'router' => $router,
-                'routeMatch' => $routeMatch,
             );
+            if ($routeMatch) $blogItem['routeMatch'] = $routeMatch;
             $navigation->addPage($blogItem);
         } catch (\Exception $e) {
             // blog module not loaded?
@@ -59,8 +59,8 @@ class AppNavigationFactory extends AbstractNavigationFactory
                 'pages' => $authNav->getPages(),
                 'type' => 'Ctrl\Navigation\Page\Mvc',
                 'router' => $router,
-                'routeMatch' => $routeMatch,
             );
+            if ($routeMatch) $authItem['routeMatch'] = $routeMatch;
             $navigation->addPage($authItem);
         } catch (\Exception $e) {
             // auth module not loaded?

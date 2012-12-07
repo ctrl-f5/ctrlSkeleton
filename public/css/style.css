@@ -15,3 +15,9 @@ div.row.article-text-editor-preview {
     margin-top: 15px;
     background-color: #F9F9F9;
 }
+span.tree-spacer {
+    color: #EEEEEE;
+}
+.table td.no-border {
+    border: 0;
+}

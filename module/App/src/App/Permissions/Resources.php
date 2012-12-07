@@ -36,7 +36,6 @@ class Resources extends \Ctrl\Permissions\Resources
                     'App\Controller',
                 ),
                 self::SET_ACTIONS => array(
-                    self::ACTION_USER_REMOVE,
                 ),
             )
         );
