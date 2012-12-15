@@ -52,21 +52,22 @@ to create a database with sample data execute the following task:
 if something goes wrong while building the database you can always add the -verbose flag.
 phing is currently configured with the following tasks:
 
-    phing -l
-    Buildfile: /my/project/dir/build/build.xml
-     [property] Loading /my/project/dir/build/build.properties
     Default target:
     -------------------------------------------------------------------------------
-     db-reload           drops, creates, migrates and loads sample data
-
+     db-reload              drops, creates, migrates and loads sample data
+    
     Main targets:
     -------------------------------------------------------------------------------
-     db-create           creates an empty database with the configured name
-     db-drop             drops the database completely
-     db-load-sampledata  loads sample data
-     db-migrate          Database Migrations
-     db-reload           drops, creates, migrates and loads sample data
-     db-reset            drops, creates and migrates
+     db-create              creates an empty database with the configured name
+     db-drop                drops the database completely
+     db-load-sampledata     loads sample data
+     db-migrate             Database Migrations
+     db-reload              drops, creates, migrates and loads sample data
+     db-reset               drops, creates and migrates
+     orm-init               drops, generates new sql from entities, creates, migrates
+     orm-init-sampledata    drops, generates new sql from entities, creates, migrates, loads sample data
+     orm-sql-from-entities  creates 001.sql with sql generated from doctrine from entities
+     orm-validate           validates the schema with the doctrine mappings
 
 Doctrine Proxies
 ------------
