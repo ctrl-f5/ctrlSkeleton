@@ -33,8 +33,6 @@
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "dev-master",
-        "doctrine/doctrine-orm-module": "dev-master",
-        "doctrine/doctrine-module": "dev-master",
         "ctrl-f5/ctrllib": "dev-master",
         "ctrl-f5/ctrlAuth": "dev-master",
         "ctrl-f5/ctrlBlog": "dev-master",
