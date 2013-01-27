@@ -16,7 +16,7 @@
             <td><?php echo $company->getName(); ?></td>
             <td><?php $range = $company->getCatalogDateRange(); echo $range['oldest'].' - '.$range['newest']; ?></td>
             <td><?php echo $this->ctrlButton('link', array(
-                'url' => $this->url('ctrl_auth/default', array(
+                'url' => $this->url('default/default', array(
                     'controller' => 'car',
                     'action' => 'index',
                     'company' => $company->getId(),
