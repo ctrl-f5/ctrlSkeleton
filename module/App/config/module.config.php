@@ -38,7 +38,7 @@ return array(
             'app_driver' => array(
                 'class' => 'Doctrine\ORM\Mapping\Driver\XmlDriver',
                     'cache' => 'array',
-                    'paths' => array(__DIR__.'/../src/App/Domain', __DIR__.'/entities')
+                    'paths' => array(__DIR__.'/../src/Domain', __DIR__.'/entities')
             ),
             'orm_default' => array(
                 'drivers' => array(
