@@ -10,6 +10,11 @@ return array(
     ),
     'domain_services' => array(
         'invokables' => array(
+            'CompanyService' => 'App\Service\CompanyService',
+            'CarService' => 'App\Service\CarService',
+        ),
+        'aliases' => array(
+            'Company' => 'CompanyService',
         ),
     ),
     'view_manager' => array(
