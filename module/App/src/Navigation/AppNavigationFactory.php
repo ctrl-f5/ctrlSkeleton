@@ -17,8 +17,9 @@ class AppNavigationFactory extends AbstractNavigationFactory
     }
 
     /**
-     * @param ServiceLocatorInterface $serviceLocator
+     * @param \Zend\ServiceManager\ServiceLocatorInterface $serviceLocator
      * @return \Zend\Navigation\Navigation
+     * @throws \Exception
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
