@@ -107,7 +107,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "95f9733511f4c53237df34832d9250135f860660"
+                "reference": "543c17548b02b8c276665cffef2bddd4690e39ff"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -116,7 +116,7 @@
                 "ctrl-f5/ctrlauth": "dev-master",
                 "ctrl-f5/markdown-oo-php": "dev-master#2efa6ba"
             },
-            "time": "2013-01-27 22:44:20",
+            "time": "2013-01-28 01:47:29",
             "type": "library",
             "extra": {
                 "installer-paths": {
