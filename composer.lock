@@ -146,12 +146,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrljs",
-                "reference": "387a565b4f2ce95460b59f9d18087ed59369988b"
+                "reference": "5ac3365647f1e94c1db863689b763fb03ba2950b"
             },
             "require": {
                 "composer/installers": "*"
             },
-            "time": "2013-01-27 22:42:58",
+            "time": "2013-01-28 00:26:35",
             "type": "zend-extra",
             "license": [
                 "BSD-3-Clause"
