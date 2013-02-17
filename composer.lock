@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers",
-                "reference": "v1.0.1"
+                "reference": "0a584aec8e1cf9df7a29d7a16067cd4db2632d07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/composer/installers/archive/v1.0.1.zip",
-                "reference": "v1.0.1",
+                "url": "https://api.github.com/repos/composer/installers/zipball/0a584aec8e1cf9df7a29d7a16067cd4db2632d07",
+                "reference": "0a584aec8e1cf9df7a29d7a16067cd4db2632d07",
                 "shasum": ""
             },
             "replace": {
@@ -22,10 +22,13 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "3.7.*"
             },
-            "time": "2013-01-14 07:14:45",
+            "time": "2013-02-11 22:04:15",
             "type": "composer-installer",
             "extra": {
-                "class": "Composer\\Installers\\Installer"
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
             },
             "autoload": {
                 "psr-0": {
@@ -75,14 +78,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlAuth",
-                "reference": "b1c3a843a7494f39e4fd995b7db6734934fccf2f"
+                "reference": "3cfabcab6a7ff9c0ff3c890cb15341bcd2db323a"
             },
             "require": {
                 "php": ">=5.3.3",
                 "zendframework/zendframework": "dev-master",
                 "ctrl-f5/ctrllib": "dev-master"
             },
-            "time": "2012-12-27 23:52:30",
+            "time": "2013-02-17 17:20:38",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -107,7 +110,7 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrlBlog",
-                "reference": "543c17548b02b8c276665cffef2bddd4690e39ff"
+                "reference": "cc05ac6d8555d455ed9ac46d4bec457f8e65df86"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -116,7 +119,7 @@
                 "ctrl-f5/ctrlauth": "dev-master",
                 "ctrl-f5/markdown-oo-php": "dev-master#2efa6ba"
             },
-            "time": "2013-01-28 01:47:29",
+            "time": "2013-02-17 17:21:14",
             "type": "library",
             "extra": {
                 "installer-paths": {
@@ -170,14 +173,14 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/ctrl-f5/ctrllib",
-                "reference": "3399c7e41e84903efb75a6f11611f09f2fb9b6fc"
+                "reference": "0dc7b009d0460c23dcb0fdac1f0f406cfcdb1224"
             },
             "require": {
                 "php": ">=5.3.3",
-                "zendframework/zendframework": "2.0.*",
+                "zendframework/zendframework": "dev-master",
                 "doctrine/doctrine-orm-module": "dev-master"
             },
-            "time": "2013-01-26 23:55:36",
+            "time": "2013-02-17 17:24:52",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -412,13 +415,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/common",
-                "reference": "a5482b347530bb8522e355b399e5ff4983433a40"
+                "url": "https://github.com/doctrine/common.git",
+                "reference": "19a18bd4d957eaab64dbe7fbe6e89ba721c94ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/archive/a5482b347530bb8522e355b399e5ff4983433a40.zip",
-                "reference": "a5482b347530bb8522e355b399e5ff4983433a40",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/19a18bd4d957eaab64dbe7fbe6e89ba721c94ead",
+                "reference": "19a18bd4d957eaab64dbe7fbe6e89ba721c94ead",
                 "shasum": ""
             },
             "require": {
@@ -429,7 +432,7 @@
                 "doctrine/lexer": "1.*",
                 "doctrine/annotations": "1.*"
             },
-            "time": "2013-01-26 23:53:30",
+            "time": "2013-02-16 16:48:26",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -487,12 +490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal",
-                "reference": "3ba21503bd7d1d8b5ae7ae5db07d8564725c5fa5"
+                "reference": "eb6ee9a86421ba534d7c5514b190d1d06b30d4b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/archive/3ba21503bd7d1d8b5ae7ae5db07d8564725c5fa5.zip",
-                "reference": "3ba21503bd7d1d8b5ae7ae5db07d8564725c5fa5",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/eb6ee9a86421ba534d7c5514b190d1d06b30d4b1",
+                "reference": "eb6ee9a86421ba534d7c5514b190d1d06b30d4b1",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +508,7 @@
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
             },
-            "time": "2013-01-25 22:44:27",
+            "time": "2013-02-09 23:28:29",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -834,13 +837,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "3d1956d26033ac0523ff2a024ce526ca7c93cea6"
+                "url": "https://github.com/doctrine/doctrine2.git",
+                "reference": "2980d76adbf5f02d420e1d5eaf00ddcfdc2aa10f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/archive/3d1956d26033ac0523ff2a024ce526ca7c93cea6.zip",
-                "reference": "3d1956d26033ac0523ff2a024ce526ca7c93cea6",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/2980d76adbf5f02d420e1d5eaf00ddcfdc2aa10f",
+                "reference": "2980d76adbf5f02d420e1d5eaf00ddcfdc2aa10f",
                 "shasum": ""
             },
             "require": {
@@ -852,7 +855,7 @@
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "2013-01-27 16:58:14",
+            "time": "2013-02-15 17:41:38",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
@@ -906,22 +909,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console",
-                "reference": "fdb2d9320106926266a0f7a5a97aab7213e11ad6"
+                "reference": "f65e34d058f0990a724f78e8d091dc0a20e439ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/archive/fdb2d9320106926266a0f7a5a97aab7213e11ad6.zip",
-                "reference": "fdb2d9320106926266a0f7a5a97aab7213e11ad6",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/f65e34d058f0990a724f78e8d091dc0a20e439ac",
+                "reference": "f65e34d058f0990a724f78e8d091dc0a20e439ac",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "2013-01-24 15:55:08",
+            "time": "2013-01-31 21:39:01",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -951,13 +954,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/zendframework/zf2.git",
-                "reference": "a1a31fe0a33892cc4fded79ace93864f0372b43b"
+                "url": "https://github.com/zendframework/zf2.git",
+                "reference": "f07fafabae9d36192495c519bd7ddadd041ea5e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/zendframework/zf2/archive/a1a31fe0a33892cc4fded79ace93864f0372b43b.zip",
-                "reference": "a1a31fe0a33892cc4fded79ace93864f0372b43b",
+                "url": "https://api.github.com/repos/zendframework/zf2/zipball/f07fafabae9d36192495c519bd7ddadd041ea5e2",
+                "reference": "f07fafabae9d36192495c519bd7ddadd041ea5e2",
                 "shasum": ""
             },
             "require": {
@@ -1011,7 +1014,9 @@
                 "zendframework/zend-i18n": "self.version",
                 "zendframework/zend-debug": "self.version",
                 "zendframework/zend-permissions-acl": "self.version",
-                "zendframework/zend-version": "self.version"
+                "zendframework/zend-version": "self.version",
+                "zendframework/zend-permissions-rbac": "self.version",
+                "zendframework/zend-test": "self.version"
             },
             "require-dev": {
                 "doctrine/common": ">=2.1",
@@ -1024,22 +1029,26 @@
                 "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
                 "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler"
             },
-            "time": "2013-01-26 11:18:56",
+            "time": "2013-02-15 19:19:25",
             "bin": [
                 "bin/classmap_generator.php"
             ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev",
-                    "dev-develop": "2.1-dev"
+                    "dev-master": "2.1-dev",
+                    "dev-develop": "2.2-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
                     "Zend\\": "library/",
                     "ZendTest\\": "tests/"
-                }
+                },
+                "files": [
+                    "library/Zend/Stdlib/compatibility/autoload.php",
+                    "library/Zend/Session/compatibility/autoload.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [

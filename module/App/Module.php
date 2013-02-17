@@ -63,7 +63,8 @@ class Module
                      * DEBUG: DISABLED ACL FOR NAVIGATION
                      */
                     $acl = $serviceManager->get('CtrlAuthAcl');
-                    //$navHelper->setAcl($acl);
+                    $navHelper->setAcl($acl);
+                    $navHelper->setUseAcl(true);
                     $navHelper->setRoles($serviceManager->get('DomainServiceLoader')->get('CtrlAuthUser')->getAuthenticatedUser()->getRoles()->toArray());
                 } catch (\Exception $e) {
                     throw $e;

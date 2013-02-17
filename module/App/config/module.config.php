@@ -53,7 +53,7 @@ return array(
                 'label' => 'Home',
                 'route' => 'default/default',
                 'type' => 'Ctrl\Navigation\Page\Mvc',
-                'resource' => 'routes.App\Controller',
+                'resource' => 'menu.App',
                 'params' => array(
                     'controller' => 'index',
                     'action' => 'index',
